@@ -1,0 +1,32 @@
+{
+  "name": "react-hono-pages",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev --live-reload=true dist",
+    "watch": "vite build --watch",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && wrangler pages deploy dist"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.1",
+    "@libsql/client": "^0.6.0",
+    "drizzle-orm": "^0.30.10",
+    "hono": "^4.3.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "wrangler": "^3.57.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.21.4",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.0"
+  }
+}
